@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zipper</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="heap.js"></script>
+    <script src="huffman.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        Zipper
+    </nav>
+    <div id="container">
+        <div class="text_box">
+            <img src="tree_image.png" alt="Tree Structure" class="info_image" id="treeImage">
+            <span id="treearea">
+                Tree Structure Will Be Displayed Here !!
+            </span>
+        </div>
+        <div class="text_box">
+            <span id="temptext">
+                Operation info will be shown here !!
+            </span>
+        </div>
+    </div>
+
+    <div>
+        <form method="post" enctype="multipart/form-data" style="display: inline-block;">
+            <input type="file" id="uploadedFile" />
+        </form>
+        <br>
+        <button type="button" class="btn btn-success center_buttons" id="encode">Encode</button>
+        <br>
+        <button type="button" class="btn btn-danger center_buttons" id="decode">Decode</button>
+    </div>
+</body>
+
+</html>
